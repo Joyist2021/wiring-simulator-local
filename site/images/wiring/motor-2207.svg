@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 296">
+  <style>
+    #silkscreen-x:target ~ * { --silkscreen-x: -1; }
+    #silkscreen-y:target ~ * { --silkscreen-y: -1; }
+    text {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(var(--silkscreen-x, 1), var(--silkscreen-y, 1));
+    }
+  </style>
+  <g id="silkscreen-x"/>
+  <g id="silkscreen-y"/>
+  <defs>
+    <linearGradient id="bell">
+      <stop stop-color="#30353a"/>
+      <stop offset=".16" stop-color="#15181c"/>
+      <stop offset=".43" stop-color="#0c0f12"/>
+      <stop offset=".69" stop-color="#111419"/>
+      <stop offset=".93" stop-color="#272c31"/>
+      <stop offset="1" stop-color="#1a1d21"/>
+    </linearGradient>
+    <linearGradient id="skirt" x2="0" y2="1">
+      <stop stop-color="#545b61"/>
+      <stop offset=".32" stop-color="#3d4349"/>
+      <stop offset="1" stop-color="#24292e"/>
+    </linearGradient>
+    <linearGradient id="rim" x1=".15" y1="0" x2=".78" y2="1">
+      <stop stop-color="#79838d"/>
+      <stop offset=".28" stop-color="#3b434c"/>
+      <stop offset=".71" stop-color="#505962"/>
+      <stop offset="1" stop-color="#a6aeb5"/>
+    </linearGradient>
+    <linearGradient id="spoke" x2="1" y2=".72">
+      <stop stop-color="#717b85"/>
+      <stop offset=".22" stop-color="#555e68"/>
+      <stop offset=".52" stop-color="#404851"/>
+      <stop offset="1" stop-color="#2c333b"/>
+    </linearGradient>
+    <linearGradient id="steel">
+      <stop stop-color="#434950"/>
+      <stop offset=".22" stop-color="#89939c"/>
+      <stop offset=".39" stop-color="#d3d9dc"/>
+      <stop offset=".56" stop-color="#8c949c"/>
+      <stop offset=".81" stop-color="#4e565f"/>
+      <stop offset="1" stop-color="#30363d"/>
+    </linearGradient>
+    <linearGradient id="copper" x2="1" y2="1">
+      <stop stop-color="#6f311c"/>
+      <stop offset=".35" stop-color="#b85c31"/>
+      <stop offset=".51" stop-color="#f4af6b"/>
+      <stop offset=".63" stop-color="#aa4c26"/>
+      <stop offset="1" stop-color="#4d2317"/>
+    </linearGradient>
+    <linearGradient id="wire-tin" x2="0" y2="1">
+      <stop stop-color="#edf1f2"/>
+      <stop offset=".44" stop-color="#b1bbbf"/>
+      <stop offset="1" stop-color="#69747a"/>
+    </linearGradient>
+    <clipPath id="vent-bounds"><circle r="109"/></clipPath>
+
+    <g id="winding">
+      <path d="M-24-92Q-19-68-15-65M-18-97Q-14-73-10-65M-12-100Q-8-75-5-65M-6-102Q-3-76 0-65M0-102Q3-75 5-65M6-101Q9-75 10-65M12-100Q15-74 15-65M18-97Q21-74 20-67M24-93Q26-75 24-69"
+        fill="none" stroke="url(#copper)" stroke-width="3.9" stroke-linecap="round"/>
+    </g>
+    <g id="spoke-arm">
+      <path d="M-13-22-19-96l-7-13h52l-8 13-7 74Z" fill="#1b2025" transform="translate(1.5 3)"/>
+      <path d="M-13-22-19-96l-7-13h52l-8 13-7 74Z" fill="url(#spoke)"/>
+      <path d="m-13-23-6-73-7-13h6l6 11 6 73Zm31-73 8-13h-4l-8 13-5 62Z" fill="#aeb8c0" opacity=".49"/>
+    </g>
+    <g id="thread">
+      <path d="M-22 0C-20 6 19 5 22-1" fill="none" stroke="#22282d" stroke-width="3.6"/>
+      <path d="M-22-.8C-20 4.4 19 3.5 22-1.8" fill="none" stroke="#b3bbc2" stroke-width="1.6"/>
+    </g>
+  </defs>
+
+  <!-- Insulated leads with exposed tinned ends. -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M173 235c58 0 89-31 146-31h19m-164 35c69 0 87-1 145-1h19m-164 5c63 0 91 29 145 29h19" stroke="#181b1f" stroke-width="8"/>
+    <path d="M177 233c56 0 84-31 142-31h14m-156 35c66 0 85-1 142-1h14m-156 5c60 0 89 29 142 29h14" stroke="#5e646a" stroke-opacity=".72" stroke-width="1.7"/>
+    <path d="M335 204h13m-13 34h13m-13 34h13" stroke="url(#wire-tin)" stroke-width="5"/>
+    <path d="M337 202.7h10m-10 34h10m-10 34h10" stroke="#e4ebee" stroke-width=".85"/>
+  </g>
+
+  <!-- Stator base, behind the bell. -->
+  <path d="M70 211h139l17 30-6 21-22 11-27-1-18-10-28 1-18 10-28 1-22-13-2-20Z"
+    fill="url(#skirt)" stroke="#1d2226" stroke-width="1.4"/>
+  <path d="M56 241l25 10 25-3 23-10h31l22 10 23 2 21-9-6 21-22 11-27-1-18-10-28 1-18 10-28 1-22-13Z"
+    fill="#252a30" opacity=".69"/>
+  <path d="m58 241 23 10 24-3m99 2 21-9" fill="none" stroke="#798188" opacity=".56"/>
+
+  <path d="M18 143h244v65c0 27-55 49-122 49S18 235 18 208Z" fill="url(#bell)" stroke="#191d21" stroke-width="1.4"/>
+  <path d="M22 209c10 23 61 44 118 44s108-21 118-44" fill="none" stroke="#3c4249" stroke-opacity=".49" stroke-width="1.1"/>
+
+  <g transform="translate(140 143) scale(1 .43)">
+    <circle r="122" fill="url(#rim)" stroke="#59626b" stroke-width="2"/>
+    <circle r="111" fill="#11161b" stroke="#222a30" stroke-width="2"/>
+    <circle cy="7" r="86" fill="none" stroke="#292f34" stroke-width="16"/>
+    <g clip-path="url(#vent-bounds)">
+      <g transform="translate(0 13)">
+        <use href="#winding" transform="rotate(22.5)"/>
+        <use href="#winding" transform="rotate(67.5)"/>
+        <use href="#winding" transform="rotate(112.5)"/>
+        <use href="#winding" transform="rotate(157.5)"/>
+        <use href="#winding" transform="rotate(202.5)"/>
+        <use href="#winding" transform="rotate(247.5)"/>
+        <use href="#winding" transform="rotate(292.5)"/>
+        <use href="#winding" transform="rotate(337.5)"/>
+      </g>
+    </g>
+    <use href="#spoke-arm"/>
+    <use href="#spoke-arm" transform="rotate(45)"/>
+    <use href="#spoke-arm" transform="rotate(90)"/>
+    <use href="#spoke-arm" transform="rotate(135)"/>
+    <use href="#spoke-arm" transform="rotate(180)"/>
+    <use href="#spoke-arm" transform="rotate(225)"/>
+    <use href="#spoke-arm" transform="rotate(270)"/>
+    <use href="#spoke-arm" transform="rotate(315)"/>
+    <circle r="32" fill="url(#spoke)" stroke="#818b95" stroke-width="2"/>
+    <path d="M-115 26a118 118 0 0 0 230 0" fill="none" stroke="#c4ccd1" stroke-opacity=".8" stroke-width="3.4"/>
+    <path d="M-98-68A119 119 0 0 1 63-100" fill="none" stroke="#c4ccd1" stroke-opacity=".57" stroke-width="2.5"/>
+  </g>
+  <path d="M19 151c7 25 57 46 121 46s114-21 121-46" fill="none" stroke="#606b75" stroke-width="3.5"/>
+
+  <g fill="#e0e4e7" text-anchor="middle" font-family="Arial, sans-serif">
+    <text x="140" y="228" font-size="31" font-weight="800" letter-spacing="2">2207</text>
+    <text x="140" y="244" font-size="12" font-weight="700" letter-spacing="2">1960KV</text>
+  </g>
+
+  <ellipse cx="140" cy="144" rx="27" ry="11" fill="#171d23" stroke="#89939a" stroke-width="1"/>
+  <path d="M116 92h48v47c0 6-10 10-24 10s-24-4-24-10Z" fill="url(#steel)" stroke="#444d55" stroke-width="1"/>
+  <path d="M117 91h46v13c-4 5-41 5-46 0Z" fill="url(#steel)" stroke="#aab3ba" stroke-opacity=".52"/>
+  <path d="M118 22h44v70c0 5-10 9-22 9s-22-4-22-9Z" fill="url(#steel)" stroke="#3d454d" stroke-width="1.2"/>
+  <path d="M119 27h41v64c0 5-8 8-20 8s-21-3-21-8Z" fill="#22282e" opacity=".37"/>
+  <use href="#thread" x="140" y="31"/><use href="#thread" x="140" y="40"/>
+  <use href="#thread" x="140" y="49"/><use href="#thread" x="140" y="58"/>
+  <use href="#thread" x="140" y="67"/><use href="#thread" x="140" y="76"/>
+  <use href="#thread" x="140" y="85"/><use href="#thread" x="140" y="94"/>
+  <path d="M118 27l4-9h36l4 9c-5 5-39 5-44 0Z" fill="url(#steel)" stroke="#6b747c"/>
+  <ellipse cx="140" cy="18" rx="18" ry="7.5" fill="url(#steel)" stroke="#c6cdd2" stroke-width="1.6"/>
+  <ellipse cx="140" cy="18" rx="13" ry="4.9" fill="#151a20" stroke="#69727b"/>
+  <path d="M129 17c3-4 19-4 23 0" fill="none" stroke="#9ca6ae" stroke-opacity=".64"/>
+</svg>

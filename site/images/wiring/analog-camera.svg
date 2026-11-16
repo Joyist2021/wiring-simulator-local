@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 44 360 236">
+  <style>
+    #silkscreen-x:target ~ * { --silkscreen-x: -1; }
+    #silkscreen-y:target ~ * { --silkscreen-y: -1; }
+    text {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(var(--silkscreen-x, 1), var(--silkscreen-y, 1));
+    }
+  </style>
+  <g id="silkscreen-x"/>
+  <g id="silkscreen-y"/>
+  <defs>
+    <linearGradient id="housing" x2="1" y2="1">
+      <stop stop-color="#5b6165"/><stop offset=".35" stop-color="#383f44"/><stop offset=".8" stop-color="#24292e"/><stop offset="1" stop-color="#171c20"/>
+    </linearGradient>
+    <linearGradient id="barrel" x2="0" y2="1">
+      <stop stop-color="#454c52"/><stop offset=".2" stop-color="#656d73"/><stop offset=".42" stop-color="#3a4147"/>
+      <stop offset=".8" stop-color="#252a30"/><stop offset="1" stop-color="#1b1f24"/>
+    </linearGradient>
+    <linearGradient id="focus" x2="0" y2="1">
+      <stop stop-color="#545c62"/><stop offset=".38" stop-color="#333a40"/><stop offset="1" stop-color="#1a1e23"/>
+    </linearGradient>
+    <linearGradient id="gold" x2="1" y2="1">
+      <stop stop-color="#fff0b8"/><stop offset=".48" stop-color="#d6b475"/><stop offset="1" stop-color="#94723d"/>
+    </linearGradient>
+    <g id="pad">
+      <rect x="-9" y="-13" width="18" height="26" rx="3" fill="url(#gold)" stroke="#927c52"/>
+      <path d="M-5 9v-18h10" fill="none" stroke="#fff0bc" stroke-opacity=".66"/>
+    </g>
+    <pattern id="grip" width="31" height="10" patternUnits="userSpaceOnUse">
+      <path d="M3 2h25" stroke="#7d8589" stroke-width="1.4" stroke-opacity=".52"/>
+      <path d="M3 8h25" stroke="#12171c" stroke-width="1.6" stroke-opacity=".7"/>
+    </pattern>
+  </defs>
+
+  <!-- Orthographic side elevation of the body and protruding lens barrel. -->
+  <rect x="196" y="56" width="106" height="214" rx="13" fill="#171c21" stroke="#161b20" stroke-width="2"/>
+  <path d="M194 61h88a12 12 0 0 1 12 12v184a11 11 0 0 1-11 11h-89Z" fill="url(#housing)" stroke="#20262b" stroke-width="2"/>
+  <path d="M202 67h76q9 0 10 10m0 163v14q-1 7-8 8h-64" fill="none" stroke="#82888a" stroke-opacity=".55" stroke-width="2"/>
+  <rect x="298" y="55" width="7" height="214" rx="1.5" fill="#a59879" stroke="#53524b"/>
+  <rect x="305" y="64" width="34" height="197" rx="4" fill="#292e34" stroke="#1b2025" stroke-width="1.7"/>
+  <path d="M310 71h24v183h-24" stroke="#6e7675" stroke-opacity=".54" fill="none"/>
+  <path d="M324 98h-8m8 64h-8m8 64h-8" stroke="#a19163" stroke-width="1.5" stroke-opacity=".66"/>
+
+  <path d="M70 112h87l24 14h29v72h-29l-24 14H70Z" fill="url(#barrel)" stroke="#20252a" stroke-width="2.5"/>
+  <path d="M79 118h74l24 14h28m-124 72h70l26-13h27" fill="none" stroke="#828b90" stroke-opacity=".35" stroke-width="2"/>
+  <rect x="130" y="105" width="32" height="114" rx="5" fill="url(#focus)" stroke="#1d2227" stroke-width="2"/>
+  <rect x="131" y="107" width="30" height="110" rx="4" fill="url(#grip)"/>
+  <rect x="51" y="104" width="33" height="116" rx="6" fill="url(#barrel)" stroke="#24292e" stroke-width="2"/>
+  <rect x="41" y="108" width="13" height="108" rx="4" fill="#222830" stroke="#3f484f" stroke-width="2"/>
+  <path d="M44 119v32m0 15v38" stroke="#6b7980" stroke-opacity=".54" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M58 111v101m19-101v101" stroke="#899093" stroke-opacity=".29" stroke-width="1.4"/>
+
+  <path d="M213 148h58q12 0 12 13v42q0 11-11 11h-59Z" fill="#30363c" stroke="#171c20" stroke-width="2"/>
+  <circle cx="250" cy="181" r="17" fill="url(#gold)" stroke="#9a7d4b" stroke-width="2"/>
+  <circle cx="250" cy="181" r="10" fill="#2e2923" stroke="#d3b271" stroke-width="1.6"/>
+  <path d="M244 179h12m-11 5h10" stroke="#a78e67" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="208" cy="250" r="4" fill="#21262a" stroke="#757b7c"/>
+
+  <g>
+    <use href="#pad" x="324" y="98"/>
+    <use href="#pad" x="324" y="162"/>
+    <use href="#pad" x="324" y="226"/>
+    <g text-anchor="end" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#eaece5">
+      <text x="306" y="103">5V</text>
+      <text x="306" y="167">GND</text>
+      <text x="306" y="231">VID</text>
+    </g>
+  </g>
+</svg>

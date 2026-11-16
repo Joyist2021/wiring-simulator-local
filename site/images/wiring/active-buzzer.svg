@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150">
+  <style>
+    #silkscreen-x:target ~ * { --silkscreen-x: -1; }
+    #silkscreen-y:target ~ * { --silkscreen-y: -1; }
+    text {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(var(--silkscreen-x, 1), var(--silkscreen-y, 1));
+    }
+  </style>
+  <g id="silkscreen-x"/>
+  <g id="silkscreen-y"/>
+  <defs>
+    <linearGradient id="case" x2="1" y2="0">
+      <stop stop-color="#171b1e"/>
+      <stop offset=".3" stop-color="#44494b"/>
+      <stop offset=".74" stop-color="#343a3d"/>
+      <stop offset="1" stop-color="#171c20"/>
+    </linearGradient>
+    <radialGradient id="cap" cx=".36" cy=".3" r=".79">
+      <stop stop-color="#565b5b"/>
+      <stop offset=".65" stop-color="#303638"/>
+      <stop offset="1" stop-color="#1f2428"/>
+    </radialGradient>
+    <linearGradient id="tip" x2="0" y2="1">
+      <stop stop-color="#e9ece8"/>
+      <stop offset=".55" stop-color="#b2b8b8"/>
+      <stop offset="1" stop-color="#737c80"/>
+    </linearGradient>
+  </defs>
+  <path d="M20 54C65 53 93 41 136 55s25 9 43 8M20 96c48 1 73-17 112-17h42" fill="none" stroke="#15191c" stroke-opacity=".28" stroke-width="9" stroke-linecap="round" transform="translate(0 2)"/>
+  <path d="M20 54C65 53 93 41 136 55s25 9 43 8" fill="none" stroke="#c13937" stroke-width="7" stroke-linecap="round"/>
+  <path d="M20 53C65 52 93 40 136 54s25 9 43 8" fill="none" stroke="#fb6d61" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20 96c48 1 73-17 112-17h42" fill="none" stroke="#252b2e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M20 94c48 1 73-17 112-17h42" fill="none" stroke="#555b5e" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M6 54h15M6 96h15" fill="none" stroke="url(#tip)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="12" cy="54" r="3" fill="#d0d5d4"/><circle cx="12" cy="96" r="3" fill="#d0d5d4"/>
+  <text x="12" y="41" text-anchor="middle" fill="#c43d39" font-family="Arial,sans-serif" font-size="18" font-weight="700">+</text>
+  <text x="12" y="122" text-anchor="middle" fill="#5c646a" font-family="Arial,sans-serif" font-size="18" font-weight="700">−</text>
+
+  <path d="M132 66v23c0 28 25 47 58 47s58-19 58-47V66Z" fill="url(#case)" stroke="#202527" stroke-width="2"/>
+  <ellipse cx="190" cy="66" rx="58" ry="47" fill="url(#cap)" stroke="#202527" stroke-width="2"/>
+  <ellipse cx="190" cy="65" rx="55" ry="44" fill="none" stroke="#a1aaa6" stroke-opacity=".24"/>
+  <ellipse cx="190" cy="66" rx="10.5" ry="8.5" fill="#111518" stroke="#6b7371" stroke-width="1.2"/>
+  <path d="M184 69q6 6 12 0" stroke="#d4c5a4" stroke-width="2" fill="none" opacity=".68"/>
+  <ellipse cx="167" cy="46" rx="11" ry="9" fill="none" stroke="#838c86" stroke-opacity=".6"/>
+  <path d="M162 46h10m-5-5v10" stroke="#959f98" stroke-opacity=".72" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M147 115c14 10 31 14 49 13" fill="none" stroke="#7c8482" stroke-opacity=".3"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 154">
+  <style>
+    #silkscreen-x:target ~ * { --silkscreen-x: -1; }
+    #silkscreen-y:target ~ * { --silkscreen-y: -1; }
+    text { transform-box: fill-box; transform-origin: center; transform: scale(var(--silkscreen-x, 1), var(--silkscreen-y, 1)); }
+  </style>
+  <g id="silkscreen-x"/><g id="silkscreen-y"/>
+  <defs>
+    <linearGradient id="nylon" x2=".3" y2="1"><stop stop-color="#f8e59a"/><stop offset=".4" stop-color="#e6bd54"/><stop offset="1" stop-color="#ad7627"/></linearGradient>
+    <linearGradient id="tin" x2="0" y2="1"><stop stop-color="#f5f6f0"/><stop offset=".55" stop-color="#c0c7c9"/><stop offset="1" stop-color="#67737c"/></linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round">
+    <path d="M64 62c73 0 100-25 177-22h72" stroke="#772728" stroke-width="17"/>
+    <path d="M64 60c73 0 100-25 177-22h72" stroke="#d75649" stroke-width="12"/>
+    <path d="M64 57c73 0 100-25 177-22h72" stroke="#fb8973" stroke-width="2"/>
+    <path d="M64 90c77 0 106 24 177 24h72" stroke="#14191d" stroke-width="17"/>
+    <path d="M64 87c77 0 106 24 177 24h72" stroke="#404a52" stroke-width="9"/>
+    <path d="M64 85c77 0 106 24 177 24h72" stroke="#737e85" stroke-width="1.8"/>
+    <path d="M311 40h20m-20 74h20" stroke="url(#tin)" stroke-width="8"/>
+    <path d="M315 38h14m-14 74h14" stroke="#eff0eb" stroke-width="1.4"/>
+  </g>
+  <path d="M14 56l8-7h50q7 0 7 7v40q0 7-7 7H14Z" fill="url(#nylon)" stroke="#a97024" stroke-width="1.5"/>
+  <path d="M14 56l8-6h7v52H14Z" fill="#b78331"/>
+  <path d="M16 62h10m-10 27h10" stroke="#f6e7a3" stroke-width="6" stroke-linecap="round"/>
+  <path d="M63 54v44m6-44v44m6-42v40" stroke="#f2d97d" stroke-width="2" opacity=".8"/>
+  <text x="45" y="81" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="800" fill="#725020">XT60</text>
+</svg>

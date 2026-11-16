@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340">
+  <style>
+    #silkscreen-x:target ~ * { --silkscreen-x: -1; }
+    #silkscreen-y:target ~ * { --silkscreen-y: -1; }
+    text {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(var(--silkscreen-x, 1), var(--silkscreen-y, 1));
+    }
+  </style>
+  <g id="silkscreen-x"/>
+  <g id="silkscreen-y"/>
+  <defs>
+    <linearGradient id="case" x2="1" y2="1">
+      <stop stop-color="#626565"/><stop offset=".34" stop-color="#3b3e3f"/><stop offset="1" stop-color="#1f2223"/>
+    </linearGradient>
+    <linearGradient id="face" x2="1" y2="1">
+      <stop stop-color="#424546"/><stop offset=".65" stop-color="#343637"/><stop offset="1" stop-color="#27292a"/>
+    </linearGradient>
+    <linearGradient id="fin" x2="1" y2="0">
+      <stop stop-color="#656768"/><stop offset=".22" stop-color="#515354"/><stop offset=".68" stop-color="#3a3d3e"/><stop offset="1" stop-color="#222526"/>
+    </linearGradient>
+    <linearGradient id="lid" x2="1" y2="1">
+      <stop stop-color="#525657"/><stop offset=".36" stop-color="#3e4142"/><stop offset="1" stop-color="#242728"/>
+    </linearGradient>
+    <linearGradient id="contact" x2="0" y2="1">
+      <stop stop-color="#f1e4bc"/><stop offset=".65" stop-color="#b69968"/><stop offset="1" stop-color="#8e7350"/>
+    </linearGradient>
+    <g id="fin-up">
+      <rect x="-2" y="0" width="13" height="80" rx="2.5" fill="#1c1f20"/>
+      <path d="M0 2h9v70l-2 6H2l-2-6Z" fill="url(#fin)"/>
+      <path d="M1 5v64" stroke="#747777" stroke-opacity=".52"/>
+    </g>
+    <g id="fin-side">
+      <rect x="0" y="-1" width="69" height="10" rx="2" fill="#202324"/>
+      <path d="M1 0h66v4l-5 3H1Z" fill="url(#fin)"/>
+      <path d="M3 1h59" stroke="#747777" stroke-opacity=".5"/>
+    </g>
+    <g id="mount">
+      <path d="M-18-16a19 19 0 0 1 27-1l27 26a17 17 0 0 1-22 25l-30-26a17 17 0 0 1-2-24Z" fill="#4a4d4e" stroke="#616363" stroke-width="1.2"/>
+      <circle r="10" fill="#1a1d1e" stroke="#666969" stroke-width="1.5"/>
+      <circle r="6.8" fill="#121516"/>
+      <circle cx="22" cy="21" r="8.5" fill="#222526" stroke="#676a6a" stroke-width="1.4"/>
+      <circle cx="22" cy="21" r="4.8" fill="#171a1b"/>
+    </g>
+    <g id="tip">
+      <rect x="-7" y="-5" width="14" height="10" rx="2" fill="url(#contact)" stroke="#927850"/>
+      <path d="M-5-3h9" stroke="#f8e8bc" stroke-opacity=".65"/>
+    </g>
+    <g id="rf-socket">
+      <rect x="-11" y="-12" width="22" height="24" rx="4" fill="#222527" stroke="#626767" stroke-width="1.2"/>
+      <rect x="-8" y="-9" width="16" height="18" rx="3" fill="url(#contact)"/>
+      <circle r="6.3" fill="#524833" stroke="#ead6a0" stroke-width="1.15"/>
+      <circle r="2.4" fill="#d6b375" stroke="#342c21" stroke-width=".75"/>
+    </g>
+  </defs>
+
+  <!-- The six labeled contacts represent the ends of the original wiring harness. -->
+  <g fill="none" stroke-linecap="round" stroke-width="4.2">
+    <path d="M73 75C93 75 89 133 117 133" stroke="#d7534d"/>
+    <path d="M73 113C93 113 90 146 117 146" stroke="#222728"/>
+    <path d="M73 151c17 0 26 9 44 9" stroke="#747774" stroke-width="5.7"/>
+    <path d="M73 151c17 0 26 9 44 9" stroke="#f1f0e8"/>
+    <path d="M73 189c17 0 26-15 44-15" stroke="#93999a"/>
+    <path d="M73 227c20 0 17-39 44-39" stroke="#986a46"/>
+    <path d="M73 265c20 0 17-63 44-63" stroke="#dfb642"/>
+  </g>
+  <rect x="6" y="60" width="72" height="220" rx="8" fill="#303435" stroke="#1f2324" stroke-width="2"/>
+  <path d="M9 94h66m-66 38h66m-66 38h66m-66 38h66m-66 38h66" stroke="#555a59" stroke-width="1"/>
+  <use href="#tip" x="18" y="75"/><use href="#tip" x="18" y="113"/>
+  <use href="#tip" x="18" y="151"/><use href="#tip" x="18" y="189"/>
+  <use href="#tip" x="18" y="227"/><use href="#tip" x="18" y="265"/>
+  <g font-family="Arial,sans-serif" font-weight="600" font-size="12" fill="#eeeee8">
+    <text x="31" y="79">VCC</text><text x="31" y="117">GND</text>
+    <text x="31" y="155">RX</text><text x="31" y="193">TX</text>
+    <text x="31" y="231">GND</text><text x="31" y="269">SBUS</text>
+  </g>
+  <rect x="105" y="119" width="22" height="95" rx="5" fill="#282c2d" stroke="#202425" stroke-width="2"/>
+  <path d="M109 131v70" stroke="#757a77" stroke-width="1.4" opacity=".7"/>
+
+  <rect x="117" y="27" width="278" height="286" rx="26" fill="url(#case)" stroke="#2c3030" stroke-width="2.6"/>
+  <rect x="121" y="31" width="270" height="278" rx="23" fill="url(#face)" stroke="#676969" stroke-opacity=".5"/>
+  <path d="M134 45q4-7 13-7h217q10 0 16 8" fill="none" stroke="#858686" stroke-opacity=".54" stroke-width="2"/>
+  <path d="M230 28h80v5h-80Z" fill="#222526"/>
+
+  <g>
+    <use href="#fin-up" x="151" y="36"/><use href="#fin-up" x="168" y="36"/>
+    <use href="#fin-up" x="185" y="36"/><use href="#fin-up" x="202" y="36"/>
+    <use href="#fin-up" x="219" y="36"/><use href="#fin-up" x="236" y="36"/>
+    <use href="#fin-up" x="253" y="36"/><use href="#fin-up" x="270" y="36"/>
+    <use href="#fin-up" x="287" y="36"/><use href="#fin-up" x="304" y="36"/>
+    <use href="#fin-up" x="321" y="36"/><use href="#fin-up" x="338" y="36"/>
+    <use href="#fin-up" transform="translate(151 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(168 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(185 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(202 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(219 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(236 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(253 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(270 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(287 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(304 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(321 306) scale(1 -1)"/>
+    <use href="#fin-up" transform="translate(338 306) scale(1 -1)"/>
+    <use href="#fin-side" x="121" y="116"/><use href="#fin-side" x="121" y="131"/>
+    <use href="#fin-side" x="121" y="146"/><use href="#fin-side" x="121" y="161"/>
+    <use href="#fin-side" x="121" y="176"/><use href="#fin-side" x="121" y="191"/>
+    <use href="#fin-side" x="121" y="206"/><use href="#fin-side" x="121" y="221"/>
+  </g>
+  <use href="#mount" x="147" y="72"/>
+  <use href="#mount" transform="translate(365 72) scale(-1 1)"/>
+  <use href="#mount" transform="translate(147 278) scale(1 -1)"/>
+  <use href="#mount" transform="translate(365 278) scale(-1 -1)"/>
+
+  <path d="M322 126h65v96h-65q-12 0-12-12v-72q0-12 12-12Z" fill="#1e2123"/>
+  <path d="M325 119h64v94h-64q-11 0-11-11v-72q0-11 11-11Z" fill="url(#lid)" stroke="#4e5151" stroke-width="1.5"/>
+  <path d="M322 128h61m-61 76h61" stroke="#717373" stroke-opacity=".37"/>
+  <g stroke="#d7dbd7" fill="none" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M371 166v15m-2-12 2-3 2 3m-2 8-4-4v-3m4 8 4-4v-3"/>
+    <circle cx="371" cy="182" r="1.2" fill="#d7dbd7"/><circle cx="367" cy="170" r="1" fill="#d7dbd7"/>
+    <rect x="374" y="168" width="2" height="2" fill="#d7dbd7"/>
+  </g>
+  <text x="252" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="31" font-weight="800" font-style="italic" fill="#efefea">DJI</text>
+  <text text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" fill="#e2e3de">
+    <tspan x="252" y="190" font-size="11" letter-spacing="1">O4 AIR UNIT</tspan>
+    <tspan x="252" y="205" font-size="10" letter-spacing="1.6">PRO</tspan>
+  </text>
+  <use href="#rf-socket" x="396" y="98"/>
+  <use href="#rf-socket" x="396" y="242"/>
+  <circle cx="296" cy="220" r="5" fill="#1b2021" stroke="#626c6c" stroke-width="1"/>
+  <circle cx="296" cy="220" r="4" fill="#809287"/>
+</svg>

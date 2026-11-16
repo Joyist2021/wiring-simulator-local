@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 734 918">
+  <style>
+    #silkscreen-x:target ~ * { --silkscreen-x: -1; }
+    #silkscreen-y:target ~ * { --silkscreen-y: -1; }
+    text {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: rotate(calc(-1 * var(--silkscreen-angle, 0deg)))
+        scale(var(--silkscreen-x, 1), var(--silkscreen-y, 1))
+        rotate(var(--silkscreen-angle, 0deg));
+    }
+  </style>
+  <g id="silkscreen-x"/>
+  <g id="silkscreen-y"/>
+  <defs>
+    <linearGradient id="board" x2="1" y2="1">
+      <stop stop-color="#8139a7"/>
+      <stop offset=".4" stop-color="#69238e"/>
+      <stop offset=".75" stop-color="#441469"/>
+      <stop offset="1" stop-color="#6f2393"/>
+    </linearGradient>
+    <linearGradient id="gold" x2="1" y2="1">
+      <stop stop-color="#fff7b9"/>
+      <stop offset=".4" stop-color="#ecd47b"/>
+      <stop offset=".65" stop-color="#bb9339"/>
+      <stop offset="1" stop-color="#f3dd85"/>
+    </linearGradient>
+    <linearGradient id="silver" x2="1" y2="1">
+      <stop stop-color="#faf2d9"/>
+      <stop offset=".52" stop-color="#d2cec0"/>
+      <stop offset="1" stop-color="#8a8e88"/>
+    </linearGradient>
+    <linearGradient id="chip" x2="1" y2="1">
+      <stop stop-color="#424646"/>
+      <stop offset=".24" stop-color="#303334"/>
+      <stop offset=".8" stop-color="#232629"/>
+      <stop offset="1" stop-color="#17191b"/>
+    </linearGradient>
+    <radialGradient id="solder" cx=".36" cy=".3" r=".73">
+      <stop stop-color="#fff9d7"/>
+      <stop offset=".48" stop-color="#e6c96d"/>
+      <stop offset=".8" stop-color="#9b6e23"/>
+      <stop offset="1" stop-color="#edc769"/>
+    </radialGradient>
+    <pattern id="qfn-pins" width="22" height="16" patternUnits="userSpaceOnUse">
+      <rect x="4" y="1" width="10" height="14" rx="2.5" fill="url(#silver)"/>
+    </pattern>
+    <g id="pad">
+      <circle r="31" fill="url(#gold)" stroke="#a37533" stroke-width="2"/>
+      <circle r="25" fill="url(#solder)" stroke="#fff0a6" stroke-width="1.5"/>
+      <circle r="15" fill="#8c692d" opacity=".3"/>
+      <circle r="23" fill="none" stroke="#fff0b4" stroke-width="2" opacity=".64"/>
+    </g>
+    <g id="capacitor">
+      <rect x="-23" y="-10" width="46" height="20" rx="4" fill="url(#silver)" stroke="#452442" stroke-width="1.5"/>
+      <rect x="-14" y="-10" width="28" height="20" rx="2" fill="#cabd93"/>
+      <path d="M-11-7h21" stroke="#ebdfb7" stroke-width="2" opacity=".75"/>
+    </g>
+    <g id="resistor">
+      <rect x="-17" y="-8" width="34" height="16" rx="3" fill="url(#silver)" stroke="#422440" stroke-width="1.5"/>
+      <rect x="-10" y="-8" width="20" height="16" rx="2" fill="#363234"/>
+    </g>
+    <g id="via">
+      <circle r="5" fill="#b781cb" opacity=".68"/>
+      <circle r="2.6" fill="#351549"/>
+    </g>
+  </defs>
+
+  <path d="M183 103 601 89q26-1 28 28l11 734q0 32-31 33l-406 4q-28 0-30-28l-20-726q-1-27 30-31Z" fill="url(#board)" stroke="#481660" stroke-width="3"/>
+  <path d="M185 110 601 96q20-1 21 22l11 733q0 25-26 26l-404 4q-21 0-23-23l-20-722q-1-22 25-26Z" fill="none" stroke="#ba62d5" stroke-opacity=".43" stroke-width="2"/>
+  <g fill="none" stroke="#b67ec7" stroke-width="3.5" opacity=".26">
+    <path d="M240 840v-51l-31-32v-97l40-44v-84M349 838v-34l-42-41V591l27-30v-59M458 837v-28l60-65V595l-24-26v-91M569 834v-53l-29-32V604l47-49v-45"/>
+    <path d="M191 213v86l45 45v63l36 33m-87 39 36 35v79m41-332v35l38 39m56-134h53l42 42h65m-120 24 63 63h50l31 33v48"/>
+    <path d="M230 724h38l20 22v56m268-665-52 57h-45m148 102v52l-41 37v70m-99 127 32-29h63m-185-48 40 44v51"/>
+  </g>
+  <g>
+    <use href="#via" x="400" y="118"/><use href="#via" x="433" y="116"/><use href="#via" x="470" y="126"/>
+    <use href="#via" x="375" y="163"/><use href="#via" x="405" y="167"/><use href="#via" x="436" y="148"/>
+    <use href="#via" x="228" y="285"/><use href="#via" x="265" y="292"/><use href="#via" x="386" y="231"/>
+    <use href="#via" x="484" y="290"/><use href="#via" x="546" y="315"/><use href="#via" x="600" y="369"/>
+    <use href="#via" x="289" y="559"/><use href="#via" x="543" y="626"/><use href="#via" x="585" y="741"/>
+    <use href="#via" x="284" y="795"/><use href="#via" x="390" y="793"/><use href="#via" x="526" y="800"/>
+  </g>
+  <g fill="none" stroke="#eadff0" stroke-width="4" opacity=".94">
+    <rect x="159" y="134" width="40" height="94" rx="4"/>
+    <rect x="154" y="243" width="38" height="52" rx="4"/>
+    <rect x="158" y="310" width="37" height="67" rx="4"/>
+    <rect x="169" y="428" width="55" height="36" rx="3"/>
+    <rect x="191" y="472" width="84" height="94" rx="4" transform="rotate(44 233 519)"/>
+    <rect x="172" y="573" width="70" height="56" rx="4"/>
+    <rect x="174" y="633" width="65" height="102" rx="4"/>
+    <rect x="179" y="742" width="48" height="46" rx="4"/>
+    <rect x="246" y="723" width="39" height="28" rx="3"/>
+    <rect x="251" y="756" width="38" height="26" rx="3"/>
+    <rect x="553" y="632" width="68" height="101" rx="4"/>
+    <rect x="561" y="746" width="47" height="35" rx="3"/>
+    <rect x="547" y="571" width="64" height="42" rx="3"/>
+    <rect x="487" y="295" width="35" height="63" rx="3"/>
+    <rect x="463" y="437" width="55" height="38" rx="3"/>
+    <rect x="489" y="477" width="47" height="56" rx="3"/>
+    <rect x="374" y="184" width="70" height="29" rx="3"/>
+    <rect x="380" y="227" width="50" height="29" rx="3"/>
+  </g>
+  <g>
+    <use href="#capacitor" transform="translate(173 179) rotate(90)"/>
+    <use href="#capacitor" transform="translate(174 268) rotate(90) scale(.84)"/>
+    <use href="#resistor" transform="translate(174 344) rotate(90) scale(1.2)"/>
+    <use href="#capacitor" x="191" y="442"/>
+    <use href="#capacitor" x="205" y="603"/>
+    <use href="#capacitor" x="204" y="764"/>
+    <use href="#resistor" x="267" y="737"/><use href="#resistor" x="270" y="767"/>
+    <use href="#resistor" x="585" y="765"/>
+    <rect x="557" y="581" width="46" height="20" rx="4" fill="url(#silver)" stroke="#452442" stroke-width="1.5"/>
+    <rect x="566" y="582" width="28" height="18" rx="3" fill="#a1b3a0"/>
+    <path d="M570 585h20" stroke="#d8e1c8" stroke-width="1.6" opacity=".68"/>
+    <use href="#resistor" x="585" y="553"/>
+    <use href="#capacitor" transform="translate(505 327) rotate(90)"/>
+    <use href="#capacitor" x="489" y="457"/>
+    <use href="#resistor" x="510" y="495"/><use href="#capacitor" x="510" y="522"/>
+    <use href="#capacitor" x="415" y="199"/><use href="#resistor" x="405" y="242"/>
+    <use href="#resistor" x="453" y="223"/><use href="#capacitor" x="469" y="197"/>
+    <use href="#capacitor" transform="translate(447 293) rotate(46)"/>
+    <use href="#capacitor" transform="translate(236 312) rotate(46) scale(.86)"/>
+    <use href="#resistor" transform="translate(213 386) rotate(90)"/>
+    <use href="#capacitor" x="185" y="402"/><use href="#resistor" x="271" y="470"/>
+    <use href="#capacitor" x="416" y="529"/><use href="#resistor" x="445" y="529"/>
+  </g>
+  <g>
+    <rect x="224" y="112" width="114" height="153" fill="url(#qfn-pins)"/>
+    <rect x="224" y="253" width="114" height="16" fill="url(#qfn-pins)"/>
+    <rect x="211" y="114" width="141" height="140" rx="8" fill="url(#chip)" stroke="#181c1c" stroke-width="3"/>
+    <path d="M221 121h121" stroke="#585b55" stroke-width="3"/>
+    <circle cx="238" cy="139" r="6" fill="#b8b7a0"/>
+    <text x="282" y="167" text-anchor="middle" fill="#cdc8ad" font-family="monospace" font-size="24" font-weight="700">
+      <tspan x="282">2401C</tspan><tspan x="282" dy="27">2521</tspan><tspan x="282" dy="27">37096</tspan>
+    </text>
+  </g>
+  <g transform="translate(353 393) rotate(45)" style="--silkscreen-angle: 45deg">
+    <rect x="-85" y="-101" width="170" height="16" fill="url(#qfn-pins)"/>
+    <rect x="-85" y="85" width="170" height="16" fill="url(#qfn-pins)"/>
+    <rect x="-85" y="-101" width="170" height="16" fill="url(#qfn-pins)" transform="rotate(90)"/>
+    <rect x="-85" y="85" width="170" height="16" fill="url(#qfn-pins)" transform="rotate(90)"/>
+    <rect x="-89" y="-89" width="178" height="178" rx="6" fill="url(#chip)" stroke="#1a1b20" stroke-width="4"/>
+    <path d="M-81-82h160" stroke="#5b5e56" stroke-width="3" opacity=".7"/>
+    <circle cx="-65" cy="64" r="6" fill="#a5a594"/>
+    <text x="0" y="-21" text-anchor="middle" fill="#aaa88e" font-family="monospace" font-size="24">
+      <tspan x="0">SX1281</tspan><tspan x="0" dy="32">2515</tspan><tspan x="0" dy="28">52083</tspan>
+    </text>
+  </g>
+  <g>
+    <rect x="305" y="540" width="231" height="16" fill="url(#qfn-pins)"/>
+    <rect x="305" y="783" width="231" height="16" fill="url(#qfn-pins)"/>
+    <rect x="-116" y="-121" width="232" height="16" fill="url(#qfn-pins)" transform="translate(418 670) rotate(90)"/>
+    <rect x="-116" y="103" width="232" height="16" fill="url(#qfn-pins)" transform="translate(418 670) rotate(90)"/>
+    <rect x="305" y="554" width="225" height="231" rx="7" fill="url(#chip)" stroke="#19191c" stroke-width="4"/>
+    <path d="M312 562h207" stroke="#565b5b" stroke-width="3" opacity=".73"/>
+    <circle cx="505" cy="580" r="7" fill="#b5b397"/>
+    <g transform="translate(408 574) rotate(90)" style="--silkscreen-angle: 90deg" fill="#c5bd99" font-family="monospace" font-size="20">
+      <text><tspan x="0" y="0">ESP8285</tspan><tspan x="0" y="26">242025</tspan><tspan x="0" y="52">H16AP30544</tspan><tspan x="0" y="77">JB00MCF026</tspan></text>
+    </g>
+    <g transform="translate(474 678)" fill="none" stroke="#b8ae8c" stroke-width="4">
+      <circle r="28"/><path d="M-22-10q17-1 15 20m-9-29Q8-18 4 17m-8-40q24 9 17 39m-4-40q20 15 12 32"/>
+    </g>
+    <rect x="206" y="479" width="79" height="79" rx="7" transform="rotate(45 245 519)" fill="url(#silver)" stroke="#6b6353" stroke-width="4"/>
+    <rect x="565" y="642" width="50" height="80" rx="6" fill="url(#silver)" stroke="#9c8b6e" stroke-width="3"/>
+    <rect x="187" y="642" width="39" height="80" rx="4" fill="url(#chip)" stroke="#121719" stroke-width="3"/>
+  </g>
+  <g>
+    <rect x="478" y="120" width="127" height="145" rx="12" fill="#d6d1be" stroke="#a19880" stroke-width="3"/>
+    <rect x="489" y="129" width="108" height="123" rx="10" fill="url(#silver)" stroke="#fff5dc" stroke-width="3"/>
+    <circle cx="543" cy="188" r="45" fill="url(#gold)" stroke="#a68b47" stroke-width="3"/>
+    <circle cx="543" cy="188" r="35" fill="#b99e5f" stroke="#fff2b1" stroke-width="3"/>
+    <circle cx="543" cy="188" r="28" fill="#d7c889"/>
+    <circle cx="543" cy="188" r="14" fill="url(#silver)" stroke="#fff3b0" stroke-width="2"/>
+    <circle cx="543" cy="188" r="6" fill="#ab812c" stroke="#f7d56a" stroke-width="2"/>
+    <circle cx="575" cy="335" r="20" fill="url(#gold)" stroke="#ffe9a0" stroke-width="2"/>
+    <rect x="544" y="401" width="83" height="124" rx="8" fill="#272326" stroke="#17191a" stroke-width="3"/>
+    <rect x="553" y="411" width="65" height="104" rx="10" fill="url(#gold)" stroke="#7d601e" stroke-width="2"/>
+    <circle cx="585" cy="464" r="22" fill="#957127" stroke="#f1ca67" stroke-width="3"/>
+    <circle cx="585" cy="464" r="12" fill="#352d1c" stroke="#ba9143" stroke-width="2"/>
+  </g>
+  <g>
+    <use href="#pad" x="240" y="840"/><use href="#pad" x="349" y="838"/>
+    <use href="#pad" x="458" y="837"/><use href="#pad" x="569" y="834"/>
+    <g style="--silkscreen-angle: -90deg" fill="#fff0fa" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle">
+      <g transform="translate(294.5 825) rotate(-90)"><text y=".35em">RX</text></g>
+      <g transform="translate(403.5 825) rotate(-90)"><text y=".35em">TX</text></g>
+      <g transform="translate(513.5 825) rotate(-90)"><text y=".35em">5V</text></g>
+      <g transform="translate(623.5 825) rotate(-90)"><text y=".35em">GND</text></g>
+    </g>
+  </g>
+</svg>
