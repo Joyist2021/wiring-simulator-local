@@ -13,3 +13,7 @@
   - `site/`：369 个文件 / 45.73 MiB。
 - 验证方式：无头 Edge + `--virtual-time-budget` + 注入脚本自动点击。结果：缩放 66%→82%、配件面板 `aria-expanded` false→true、「完整接线示例」生成 49 根线、119 个焊盘、无裂图；清空 API 缓存的纯离线模式结果一致。
 - 已知事项：控制台有 `Hydration completed but contains mismatches`（原站画布网格/缩放随机计算值 SSR 与 CSR 不同），不影响交互；仅完整镜像模拟器页，其它站内路由走 SPA fallback；镜像资源版权归原站，仅用于本地学习研究。
+
+https://github.com/Joyist2021/wiring-simulator-local/blob/main/fpv-wiring.png
+
+https://raw.githubusercontent.com/Joyist2021/wiring-simulator-local/refs/heads/main/fpv-wiring.json
