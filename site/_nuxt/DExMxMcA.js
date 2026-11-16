@@ -1,0 +1,1 @@
+import{e as n,W as r,f as u,Y as a,V as i}from"#entry";const m=n({__name:"[id]",async setup(_){let s,e;const o=r(),t=u(()=>String(o.params.id||"").trim());return t.value?([s,e]=a(()=>i(`/discussion/${t.value}`,{})),await s,e()):([s,e]=a(()=>i("/discussion",{})),await s,e()),()=>{}}});export{m as default};

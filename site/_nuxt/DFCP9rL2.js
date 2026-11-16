@@ -1,0 +1,1 @@
+import{e as n,p as a,f as c,c as m,s as u,j as o,o as _,a0 as p}from"#entry";const l=["src"],d=n({inheritAttrs:!1,__name:"CosImg",props:{url:{},resourceMode:{default:"auto"}},setup(t){const e=t,{src:s}=a(c(()=>e.url),{mode:e.resourceMode});return(r,i)=>o(s)?(_(),m("img",p({key:0,src:o(s)},r.$attrs),null,16,l)):u("",!0)}}),g=Object.assign(d,{__name:"CosImg"});export{g as _};

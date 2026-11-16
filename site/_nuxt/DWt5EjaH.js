@@ -1,0 +1,1 @@
+import{f as e,bO as o,aL as u}from"#entry";const i=["class","style"],E=/^on[A-Z]/,f=(a={})=>{const{excludeListeners:c=!1,excludeKeys:t}=a,l=e(()=>(t?.value||[]).concat(i)),s=u();return s?e(()=>{var n;return o(Object.entries((n=s.proxy)==null?void 0:n.$attrs).filter(([r])=>!l.value.includes(r)&&!(c&&E.test(r))))}):e(()=>({}))};export{f as u};
