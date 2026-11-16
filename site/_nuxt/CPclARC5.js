@@ -1,0 +1,1 @@
+const l=["1.6","2","2.5","3","3.5","4","5","6","7","8","10"],E=[{value:"",label:"全尺寸"},...l.map(a=>({value:a,label:`${a} 寸`}))],_=l.map(a=>({value:`${a}寸`,label:`${a}寸`}));export{l as F,E as a,_ as b};
