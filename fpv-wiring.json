@@ -1,0 +1,657 @@
+{
+  "format": "hs-fpv-wiring",
+  "version": 1,
+  "devices": [
+    {
+      "id": "d3",
+      "kind": "fc",
+      "x": 90.42312576502951,
+      "y": 110.74602443846035,
+      "rotation": 180
+    },
+    {
+      "id": "d4",
+      "kind": "esc",
+      "x": 96,
+      "y": 449
+    },
+    {
+      "id": "d5",
+      "kind": "battery-6s",
+      "x": -413.01380875253267,
+      "y": 675.6677043994807,
+      "rotation": 0
+    },
+    {
+      "id": "d6",
+      "kind": "capacitor",
+      "x": 204.92088095521981,
+      "y": 784.121096976986
+    },
+    {
+      "id": "d7",
+      "kind": "power-lead",
+      "x": -166.01380875253264,
+      "y": 703.6677043994807,
+      "rotation": 0
+    },
+    {
+      "id": "d8",
+      "kind": "motor",
+      "x": -135.95119364928422,
+      "y": 389.74803944552036
+    },
+    {
+      "id": "d9",
+      "kind": "motor",
+      "x": -135.20422267584516,
+      "y": 520.2845675258992
+    },
+    {
+      "id": "d10",
+      "kind": "motor",
+      "x": 469.4059993256716,
+      "y": 381.88944041775136,
+      "mirrored": true
+    },
+    {
+      "id": "d11",
+      "kind": "motor",
+      "x": 475.1066012321113,
+      "y": 517.6042866426244,
+      "mirrored": true
+    },
+    {
+      "id": "d28",
+      "kind": "elrs",
+      "x": 412.68210559056433,
+      "y": 190.03252443281622
+    },
+    {
+      "id": "d29",
+      "kind": "gps",
+      "x": -181.64639114947107,
+      "y": -56.4678269614179,
+      "rotation": 0
+    },
+    {
+      "id": "d30",
+      "kind": "buzzer",
+      "x": 359.84383330992995,
+      "y": 32.78080368906711
+    },
+    {
+      "id": "d31",
+      "kind": "led",
+      "x": 196.15796788492656,
+      "y": -84.48793445315479,
+      "rotation": 270
+    },
+    {
+      "id": "d32",
+      "kind": "dji-o4-pro",
+      "x": 70.2418158798902,
+      "y": -138.7940611133189,
+      "rotation": 270
+    },
+    {
+      "id": "d33",
+      "kind": "elrs-antenna",
+      "x": 616.5806846318349,
+      "y": 119.00863043228907
+    },
+    {
+      "id": "d34",
+      "kind": "vtx-antenna",
+      "x": 194.51606251029486,
+      "y": -347.48827588888537
+    },
+    {
+      "id": "d35",
+      "kind": "vtx-antenna",
+      "x": 121.34953486122265,
+      "y": -343.91216880186755
+    }
+  ],
+  "wires": [
+    {
+      "id": "d12",
+      "a": {
+        "device": "d6",
+        "pad": "plus"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "battery-plus"
+      }
+    },
+    {
+      "id": "d13",
+      "a": {
+        "device": "d6",
+        "pad": "minus"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "battery-minus"
+      }
+    },
+    {
+      "id": "d14",
+      "a": {
+        "device": "d7",
+        "pad": "plus"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "battery-plus"
+      }
+    },
+    {
+      "id": "d15",
+      "a": {
+        "device": "d7",
+        "pad": "minus"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "battery-minus"
+      }
+    },
+    {
+      "id": "d16",
+      "a": {
+        "device": "d8",
+        "pad": "phase-a"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-2-a"
+      }
+    },
+    {
+      "id": "d17",
+      "a": {
+        "device": "d8",
+        "pad": "phase-b"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-2-b"
+      }
+    },
+    {
+      "id": "d18",
+      "a": {
+        "device": "d8",
+        "pad": "phase-c"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-2-c"
+      }
+    },
+    {
+      "id": "d19",
+      "a": {
+        "device": "d9",
+        "pad": "phase-a"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-1-a"
+      }
+    },
+    {
+      "id": "d20",
+      "a": {
+        "device": "d9",
+        "pad": "phase-b"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-1-b"
+      }
+    },
+    {
+      "id": "d21",
+      "a": {
+        "device": "d9",
+        "pad": "phase-c"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-1-c"
+      }
+    },
+    {
+      "id": "d22",
+      "a": {
+        "device": "d10",
+        "pad": "phase-a"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-4-a"
+      }
+    },
+    {
+      "id": "d23",
+      "a": {
+        "device": "d10",
+        "pad": "phase-b"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-4-b"
+      }
+    },
+    {
+      "id": "d24",
+      "a": {
+        "device": "d10",
+        "pad": "phase-c"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-4-c"
+      }
+    },
+    {
+      "id": "d25",
+      "a": {
+        "device": "d11",
+        "pad": "phase-a"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-3-a"
+      }
+    },
+    {
+      "id": "d26",
+      "a": {
+        "device": "d11",
+        "pad": "phase-b"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-3-b"
+      }
+    },
+    {
+      "id": "d27",
+      "a": {
+        "device": "d11",
+        "pad": "phase-c"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "phase-3-c"
+      }
+    },
+    {
+      "id": "d36",
+      "a": {
+        "device": "d4",
+        "pad": "bat"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "bat-top"
+      }
+    },
+    {
+      "id": "d37",
+      "a": {
+        "device": "d3",
+        "pad": "gnd-top-left"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "gnd"
+      }
+    },
+    {
+      "id": "d38",
+      "a": {
+        "device": "d3",
+        "pad": "m1"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "m1"
+      }
+    },
+    {
+      "id": "d39",
+      "a": {
+        "device": "d3",
+        "pad": "m2"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "m2"
+      }
+    },
+    {
+      "id": "d40",
+      "a": {
+        "device": "d3",
+        "pad": "m3"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "m3"
+      }
+    },
+    {
+      "id": "d41",
+      "a": {
+        "device": "d3",
+        "pad": "m4"
+      },
+      "b": {
+        "device": "d4",
+        "pad": "m4"
+      }
+    },
+    {
+      "id": "d42",
+      "a": {
+        "device": "d4",
+        "pad": "cur"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "cur"
+      }
+    },
+    {
+      "id": "d43",
+      "a": {
+        "device": "d28",
+        "pad": "gnd"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "gnd-left-lower"
+      }
+    },
+    {
+      "id": "d44",
+      "a": {
+        "device": "d28",
+        "pad": "5v"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "5v-left"
+      }
+    },
+    {
+      "id": "d45",
+      "a": {
+        "device": "d28",
+        "pad": "rx"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "t3"
+      }
+    },
+    {
+      "id": "d46",
+      "a": {
+        "device": "d28",
+        "pad": "tx"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "r3"
+      }
+    },
+    {
+      "id": "d47",
+      "a": {
+        "device": "d33",
+        "pad": "ipex"
+      },
+      "b": {
+        "device": "d28",
+        "pad": "ipex"
+      }
+    },
+    {
+      "id": "d48",
+      "a": {
+        "device": "d29",
+        "pad": "sda"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "sda"
+      }
+    },
+    {
+      "id": "d49",
+      "a": {
+        "device": "d29",
+        "pad": "scl"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "scl"
+      }
+    },
+    {
+      "id": "d50",
+      "a": {
+        "device": "d29",
+        "pad": "gnd"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "gnd-right-lower"
+      }
+    },
+    {
+      "id": "d51",
+      "a": {
+        "device": "d29",
+        "pad": "rx"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "t5"
+      }
+    },
+    {
+      "id": "d52",
+      "a": {
+        "device": "d29",
+        "pad": "tx"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "r5"
+      }
+    },
+    {
+      "id": "d53",
+      "a": {
+        "device": "d29",
+        "pad": "5v"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "4v5-right"
+      }
+    },
+    {
+      "id": "d55",
+      "a": {
+        "device": "d32",
+        "pad": "signal-gnd"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "gnd-sbus"
+      }
+    },
+    {
+      "id": "d56",
+      "a": {
+        "device": "d32",
+        "pad": "tx"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "r1"
+      }
+    },
+    {
+      "id": "d57",
+      "a": {
+        "device": "d32",
+        "pad": "rx"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "t1"
+      }
+    },
+    {
+      "id": "d58",
+      "a": {
+        "device": "d32",
+        "pad": "gnd"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "gnd-bottom-right"
+      }
+    },
+    {
+      "id": "d59",
+      "a": {
+        "device": "d32",
+        "pad": "vcc"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "vcc"
+      }
+    },
+    {
+      "id": "d60",
+      "a": {
+        "device": "d32",
+        "pad": "sbus"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "sbus"
+      }
+    },
+    {
+      "id": "d61",
+      "a": {
+        "device": "d30",
+        "pad": "plus"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "b-plus"
+      }
+    },
+    {
+      "id": "d62",
+      "a": {
+        "device": "d30",
+        "pad": "minus"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "b-minus"
+      }
+    },
+    {
+      "id": "d63",
+      "a": {
+        "device": "d3",
+        "pad": "bat-inner"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "inner-center"
+      }
+    },
+    {
+      "id": "d64",
+      "a": {
+        "device": "d35",
+        "pad": "ipex"
+      },
+      "b": {
+        "device": "d32",
+        "pad": "ipex-1"
+      }
+    },
+    {
+      "id": "d65",
+      "a": {
+        "device": "d34",
+        "pad": "ipex"
+      },
+      "b": {
+        "device": "d32",
+        "pad": "ipex-2"
+      }
+    },
+    {
+      "id": "d66",
+      "a": {
+        "device": "d31",
+        "pad": "gnd"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "gnd-bottom-left"
+      }
+    },
+    {
+      "id": "d67",
+      "a": {
+        "device": "d31",
+        "pad": "5v"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "5v-bottom-left"
+      }
+    },
+    {
+      "id": "d68",
+      "a": {
+        "device": "d31",
+        "pad": "din"
+      },
+      "b": {
+        "device": "d3",
+        "pad": "led"
+      }
+    },
+    {
+      "id": "d69",
+      "a": {
+        "device": "d5",
+        "pad": "xt60"
+      },
+      "b": {
+        "device": "d7",
+        "pad": "xt60"
+      }
+    }
+  ]
+}
